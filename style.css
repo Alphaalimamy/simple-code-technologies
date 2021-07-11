@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #548ca8;
+}
+/* 
+font-family: 'Lobster Two', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Teko', sans-serif; */
+#navbar {
+  background-color: teal;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+.nav-logo {
+  background-color: #334257;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-logo .fa {
+  color: #fff;
+  align-self: center;
+  padding: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+/* #navbar-details {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  margin: 0 auto;
+} */
+#navbar h2 {
+  color: #fff;
+  cursor: pointer;
+  font-size: 30px;
+  font-family: "Lobster Two", cursive;
+  letter-spacing: 5px;
+  padding: 10px;
+}
+#navbar ul {
+  list-style-type: none;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  transition: color 2s ease-in-out, background 2s ease-in-out;
+}
+
+#navbar ul li a:hover {
+  color: teal;
+  background: #334257;
+}
+
+li a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 10px;
+  text-transform: capitalize;
+  padding: 30px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 776px) {
+  #navbar {
+    border-top: 5px solid #ffc914;
+    display: flex;
+    background-color: teal;
+  }
+
+  #navbar ul {
+    display: flex !important;
+    flex: 1 0 auto;
+    justify-content: space-around;
+    align-self: center;
+    flex-wrap: wrap;
+    padding: 0 10px;
+  }
+
+  #navbar ul li {
+    flex: 1 0 100px;
+  }
+
+  #navbar ul li a {
+    border-radius: 5px;
+    text-align: center;
+  }
+  .nav-logo {
+    background-color: teal;
+  }
+  #toggle-btn {
+    display: none;
+  }
+}
+
+/* HEADER SECTION */
+
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./images/bcg3.png") no-repeat center fixed;
+  background-size: cover;
+  height: 90vh;
+  object-fit: cover;
+}
+
+.header {
+  position: relative;
+}
+
+.header-content {
+  font-family: "Lobster Two", cursive;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.header-content h2 {
+  font-size: 30px;
+  text-transform: capitalize;
+  letter-spacing: 7.5px;
+  margin-bottom: 10px;
+}
+
+.header-content p {
+  text-transform: capitalize;
+  letter-spacing: 9px;
+  font-size: 17px;
+}
+
+/* COURSE */
+.courses {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.courses h2 {
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  padding-top: 10px;
+  font-size: 30px;
+}
+
+/* HORIZONTAL LINE */
+hr {
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  border: 1px solid #eeeeee;
+}
+.details {
+  font-family: "Lobster Two", cursive;
+  border-radius: 5px;
+  width: 300px;
+  margin: 22px auto;
+  cursor: pointer;
+  background-color: #eeeeee;
+  padding: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px 35px;
+  object-fit: cover;
+}
+
+.course-title {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(5, 79, 79);
+  letter-spacing: 2px;
+}
+
+.course-price {
+  text-transform: capitalize;
+  font-style: bold;
+  margin-top: 10px;
+  background-color: #476072;
+  color: #fff;
+  margin-bottom: 0;
+  padding: 10px;
+}
+
+/* INFO */
+.info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.details:hover {
+  transform: scale(1.2, 1.2);
+}
+
+/* PROJECTS SECTION */
+
+.projects h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  padding-top: 20px;
+}
+.project-title {
+  font-size: 20px;
+  text-align: center;
+}
+.project-tech {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-top: 12px;
+}
+.project-link {
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+  font-style: italic;
+}
+
+.project-link a {
+  text-decoration: none;
+  font-size: 20px;
+}
+.projects {
+  width: 90%;
+  margin: 0 auto;
+}
+.projects-information {
+  background-color: #476072;
+  -bottom: 20px;
+  padding-bottom: 50px;
+}
+
+/* FOOTER SECTION */
+footer {
+  background-color: #334257;
+}
+.footer-info {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px;
+}
+.social-icons {
+  font-size: 30px;
+}
+.footer-details {
+  font-size: 20px;
+  color: #fff;
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+.fab {
+  color: #eeeeee;
+  cursor: pointer;
+  margin-left: 2px;
+}
+
+/* CONTACT */
+.contact {
+  background-color: #eeeeee;
+  font-size: 20px;
+  font-family: "Teko", sans-serif;
+}
+
+.contact-details {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+.contact-data {
+  color: #334257;
+  cursor: pointer;
+}
+.contact-data h2 {
+  margin-top: 2px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+input,
+textarea {
+  border: 0;
+  border-bottom: 2px solid #334257;
+  border-left: 1px solid #000;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 10px;
+}
+input:focus {
+  outline: none;
+}
+input::placeholder {
+  color: #334257;
+}
+button {
+  border: 0;
+  background-color: teal;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #fff;
+  padding: 10px;
+  width: 80px;
+  margin-top: 10px;
+  outline: 0.2rem solid teal;
+  outline-offset: 4px;
+  margin-top: 10px;
+}
+
+.contact h2 {
+  text-align: center;
+  color: #334257;
+  font-size: 30px;
+  margin-top: 5px;
+}
+
+.contact hr {
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  border: 1px solid teal;
+}
+@media screen and (min-width: 768px) {
+  .contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .contact-form {
+    flex: 6;
+  }
+  .contact-data {
+    flex: 4;
+  }
+}
+/* font-family: 'Lobster Two', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Teko', sans-serif;  */
